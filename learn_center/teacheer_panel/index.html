@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+ 
+     <!-- root CSS -->
+     <link rel="stylesheet" href="../root.css">
+     <!-- standart CSS -->
+     <link rel="stylesheet" href="../standart.css">
+     <!-- Boxicons CSS -->
+     <link
+     href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+     rel="stylesheet"
+     />
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css" />
+      
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo_item">
+          <i class="bx bx-menu" id="sidebarOpen"></i>
+          <img src="images/logo.png" alt=""></i>CodingNepal
+        </div>
+        <div class="search_bar">
+             <p>Ustozlar oynasi</p>
+        </div>
+        <div class="navbar_content">
+          <i class="bi bi-grid"></i>
+          <i class='bx' id="darkLight"></i>
+          <i class='bx bx-bell' ></i>
+          <img src="images/profile.jpg" alt="" class="profile" />
+        </div>
+      </nav>
+      <!-- sidebar -->
+      <nav class="sidebar">
+        <div class="menu_content">
+          <ul class="menu_items">
+            <div class="menu_title menu_dahsboard"></div>
+            <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+            <!-- start -->
+            <li class="item">
+                <a href="#" class="nav_link">
+                  <span class="navlink_icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </span>
+                  <span class="navlink"> Dashboard</span>
+                </a>
+              </li>
+
+            <li class="item">
+              <div href="#" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bx-home-alt"></i>
+                </span>
+                <span class="navlink">Home</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              </ul>
+            </li>
+            <!-- end -->
+            <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+            <!-- start -->
+            <li class="item">
+              <div href="#" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bx-grid-alt"></i>
+                </span>
+                <span class="navlink">Overview</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+                <a href="#" class="nav_link sublink">Nav Sub Link</a>
+              </ul>
+            </li>
+            <!-- end -->
+          </ul>
+          <ul class="menu_items">
+            <div class="menu_title menu_editor"></div>
+            <!-- duplicate these li tag if you want to add or remove navlink only -->
+            <!-- Start -->
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bxs-magic-wand"></i>
+                </span>
+                <span class="navlink">Magic build</span>
+              </a>
+            </li>
+            <!-- End -->
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-loader-circle"></i>
+                </span>
+                <span class="navlink">Filters</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-filter"></i>
+                </span>
+                <span class="navlink">Filter</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-cloud-upload"></i>
+                </span>
+                <span class="navlink">Upload new</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu_items">
+            <div class="menu_title menu_setting"></div>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-flag"></i>
+                </span>
+                <span class="navlink">Notice board</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-medal"></i>
+                </span>
+                <span class="navlink">Award</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-cog"></i>
+                </span>
+                <span class="navlink">Setting</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-layer"></i>
+                </span>
+                <span class="navlink">Features</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Sidebar Open / Close -->
+          <div class="bottom_content">
+            <div class="bottom expand_sidebar">
+              <span> Expand</span>
+              <i class='bx bx-log-in' ></i>
+            </div>
+            <div class="bottom collapse_sidebar">
+              <span> Collapse</span>
+              <i class='bx bx-log-out'></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section> 
+        <h1 class="title"><i class="fa-solid fa-circle-info" style="color: #1a5fb4;"></i> Dashboard</h1>
+        <div class="info_header">
+            <div class="boxs">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p>O'quvchilar </p>
+                <span class="box_nums">200</span>
+            </div>
+            <div class="boxs">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p>oylik haqqi</p>
+                <span class="box_nums">200</span>
+            </div>
+            <div class="boxs">
+                <i class="fa-solid fa-people-group"></i>
+                <p>guruhlar</p>
+                <span class="box_nums">200</span>
+            </div>
+        </div>
+
+    </section>
+   <section>
+    <div class="charts">
+      <div class="chart" id="teacher">
+          <h2>O'qitvchining yillik diagramma tasviri</h2>
+          <div>
+              <canvas id="lineChart"></canvas>
+          </div>
+      </div>
+      <div class="chart doughnut-chart">
+          <h2>Talabalar o'zlashtirish</h2>
+          <div>
+              <canvas id="doughnut"></canvas>
+          </div>
+      </div>
+  </div>
+  </section>
+
+   <section class='guruh_diagram'>
+
+    <div class="group_diagramm_box">
+      <div class="chart doughnut-chart">
+        <h2>616-guruh Talabalar o'zlashtirish</h2>
+        <span class="hidden alo">12</span>
+        <span class="hedden yaxshi">42</span>
+        <span class="hedden past">7</span>
+        <span class="hedden yamon">9</span>
+        <div>
+            <canvas class="doughnutBox"></canvas>
+        </div>
+    </div>
+    </div>
+    <div class="group_diagramm_box">
+      <div class="chart doughnut-chart">
+        <h2>616-guruh Talabalar o'zlashtirish</h2>
+        <span class="hidden alo">19</span>
+        <span class="hedden yaxshi">32</span>
+        <span class="hedden past">31</span>
+        <span class="hedden yamon">12</span>
+        <div>
+            <canvas class="doughnutBox"></canvas>
+        </div>
+    </div>
+    </div>
+      <div class="group_diagramm_box">
+        <div class="chart doughnut-chart">
+          <h2>616-guruh Talabalar o'zlashtirish</h2>
+          <span class="hidden alo">22</span>
+          <span class="hedden yaxshi">32</span>
+          <span class="hedden past">41</span>
+          <span class="hedden yamon">12</span>
+          <div>
+              <canvas class="doughnutBox"></canvas>
+          </div>
+      </div>
+      </div>
+      <div class="group_diagramm_box">
+        <div class="chart doughnut-chart">
+          <h2>617-guruh Talabalar o'zlashtirish</h2>
+          <span class="hidden alo">12</span>
+          <span class="hedden yaxshi">43</span>
+          <span class="hedden past">22</span>
+          <span class="hedden yamon">11</span>
+          <div>
+              <canvas class="doughnutBox"></canvas>
+          </div>
+      </div>
+      </div>
+
+   </section>
+<style>
+
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    /* grid-gap: 20px; */
+    width: 90%;
+    /* padding: 20px; */
+    padding-top: 0;
+}
+
+
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    /* width: 90%;     */
+}
+
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+
+#teacher{
+  /* margin: 0 auto;; */
+  display: block;
+  width: 50%;
+  /* height: 300px; */
+}
+
+
+    section{
+        margin-left: 220px;
+        margin-top: 100px;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+   .info_header{
+    padding: 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align: center;
+   }
+   .boxs{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    padding:20px 40px;
+    font-size: 27px;
+    border-radius: 20px;
+    min-width: 300px;
+   }
+  
+   .boxs:nth-child(1){
+    background-color: rgb(141, 141, 240);
+   }
+   .boxs:nth-child(2){
+    background-color: rgb(255, 218, 150);
+   }
+   .boxs:nth-child(3){
+    background-color: rgb(212, 179, 240);
+   }
+   .boxs:hover{
+    transform:scale(1.1);
+   }    
+   .boxs span{
+    font-size: 40px;
+    font-weight: 600;
+   }
+   .boxs i{
+    color: #333;
+    font-size:35px;
+   }
+ .guruh_diagram{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-right: 70px;
+}
+.guruh_diagram .group_diagramm_box{
+  margin-top: 20px;
+  margin-left: 20px;
+  min-width: 300px;
+  max-width: 400px;
+}
+.group_diagramm_box .hidden{
+  display: none;
+}
+
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+
+<script>
+  group_diagramm_boxs =document.querySelectorAll(".group_diagramm_box")
+  console.log(group_diagramm_boxs);
+
+  var ctx = document.getElementById('lineChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        datasets: [{
+            label: 'Oylik daromadi (000 ga qisqartirilgan)',
+            data: [1200, 1400, 1600, 1800,  2000, 2100, 2200, 2400, 2550, 2570, 2600],
+           
+            backgroundColor: [
+                'rgba(85,85,85, 1)'
+            ],
+            borderColor: 'rgb(41, 155, 99)',
+            borderWidth: 1
+        },
+        {
+            label: `O'quvchi soni`,
+            data: [250, 260, 305, 315, 350, 375,450,470,490,520,520],
+           
+            backgroundColor: [
+                'rgba(85,85,85, 1)'
+            ],
+            borderColor: 'rgb(41, 155, 99)',
+            borderWidth: 1
+        }
+      ]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+
+var ctx2 = document.getElementById('doughnut').getContext('2d');
+var myChart2 = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+        labels: [`A'lo`, `Yaxshi`, 'Past',"Yomon",],
+        datasets: [{
+            label: 'Employees',
+            data: [200,100,50,20 ],
+            backgroundColor: [
+                'rgba(41, 155, 99, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(120, 46, 139,1)',
+                'rgba(120, 46, 19,1)'
+            ],
+            borderColor: [
+                'rgba(41, 155, 99, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(120, 46, 139,1)',
+                'rgba(120, 46, 19,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+
+function createGroupDiagram(){
+  group_diagramm_boxs.forEach(element => {
+    alo=element.querySelector(".alo").textContent;
+    yaxshi=element.querySelector(".yaxshi").textContent;
+    past=element.querySelector(".past").textContent;
+    yomon=element.querySelector(".yamon").textContent;
+    var ctxElement = element.querySelector(".doughnutBox").getContext('2d');
+  
+    var myChartElement = new Chart(ctxElement, {
+    type: 'doughnut',
+    data: {
+        labels: [`A'lo`, `Yaxshi`, 'Past',"yomon",],
+        datasets: [{
+            label: 'Employees',
+            data: [alo,yaxshi,past,yomon],
+            backgroundColor: [
+                'rgba(41, 155, 99, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(120, 46, 139,1)',
+                'rgba(120, 46, 19,1)'
+            ],
+            borderColor: [
+                'rgba(41, 155, 99, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(120, 46, 139,1)',
+                'rgba(120, 46, 19,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+
+ });
+}
+createGroupDiagram()
+
+</script>
+<script src="/standart.js"></script>
+</body>
+</html>

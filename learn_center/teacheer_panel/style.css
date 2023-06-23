@@ -1,0 +1,9 @@
+.menu_dahsboard::before {
+    content: "Reja";
+  }
+  .menu_editor::before {
+    content: "Imkoniyatlar";
+  }
+  .menu_setting::before {
+    content: "Setting";
+  }
